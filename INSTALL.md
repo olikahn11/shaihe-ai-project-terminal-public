@@ -4,7 +4,7 @@
 
 ## macOS 完整工作端
 
-1. 下载并打开 `沙禾项目终端-4.4.1-macOS.dmg`。
+1. 下载并打开 `Shaihe-Project-Terminal-4.4.1-macOS.dmg`。
 2. 把“沙禾项目终端”拖入“应用程序”。
 3. 首次打开后，按引导检测并登录自己使用的官方模型 CLI。
 4. 项目统一放在 `~/Documents/AI/<项目名>`。
@@ -13,7 +13,7 @@
 
 ## Windows 遥控端
 
-1. 下载并运行 `沙禾项目终端遥控-4.4.1-Windows-Setup.exe`。
+1. 下载并运行 `Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe`。
 2. 在 Mac 工作端打开“设置 → 手机远程”。
 3. 把配对地址输入 Windows 遥控端并连接。
 
@@ -21,7 +21,7 @@
 
 ## Android 遥控端
 
-1. 下载 `沙禾项目终端遥控-4.4.1-Android.apk`。
+1. 下载 `Shaihe-Project-Terminal-Remote-4.4.1-Android.apk`。
 2. 允许浏览器或文件管理器“安装未知应用”，然后安装 APK。
 3. 在 Mac 工作端打开“设置 → 手机远程”，扫码或输入配对地址。
 
@@ -29,7 +29,7 @@ APK 已通过 v2 签名，可用于侧载测试；当前使用开发测试证书
 
 ## iPhone 遥控端
 
-`沙禾项目终端遥控-4.4.1-unsigned.ipa` 是 arm64 未签名构建，不能直接安装到普通 iPhone。需要使用目标设备所属 Apple Developer 团队的证书和描述文件重新签名。
+`Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa` 是 arm64 未签名构建，不能直接安装到普通 iPhone。需要使用目标设备所属 Apple Developer 团队的证书和描述文件重新签名。
 
 没有证书时，可直接在 iPhone 浏览器打开 Mac“设置 → 手机远程”提供的地址，并把响应式 Web App 添加到主屏幕。
 
