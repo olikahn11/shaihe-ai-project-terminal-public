@@ -1,0 +1,4 @@
+75ec80faa8704c9eb57688b22e7aaf77020f75f10e01cbd7565b1fa84aab444a  沙禾项目终端-4.4.1-macOS.dmg
+3366f974aff6fba34ab96aafbb72689797c892351e04b9e53a9f5f13ef2d1452  沙禾项目终端遥控-4.4.1-Windows-Setup.exe
+6e90a075f9d14c04ed65896e2f7a9c4ca88ef01bec0a9a39bc6b49ae14cb2e94  沙禾项目终端遥控-4.4.1-Android.apk
+824656c7cc97a8274993fc42290bf514b5f71d0982d5e4586598259e69c0cc60  沙禾项目终端遥控-4.4.1-unsigned.ipa
