@@ -6,13 +6,17 @@
 
 1. 下载 [Shaihe-Project-Terminal-4.4.1-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-4.4.1-macOS.dmg)。
 2. 打开 DMG，把“沙禾项目终端”拖入“应用程序”。
-3. 首次打开时选择项目根目录；推荐使用 `~/Documents/AI/<项目名>`。
+3. 首次打开时选择项目根目录；可以使用 `~/Documents/AI`，也可以选择其他文件夹、外置磁盘或已有项目根目录。
 4. 按引导检查并登录自己使用的官方 CLI。应用不收集密码、Cookie 或 Token。
 5. 需要同时处理多个任务时，选择多个任务进入“终端平铺”；每一格都可以点击、输入、滚屏和复制粘贴。
 
 当前 DMG 使用 ad-hoc 签名，未使用 Developer ID 公证。其他 Mac 首次打开可能显示 Gatekeeper 提示；请确认文件来自本公开仓库后，在系统设置中允许打开。
 
 最低系统版本：macOS 13.0。
+
+工作端不依赖 Ghostty，正常启动不会弹出 Terminal.app 或 `.command` 窗口。应用自身不需要照片图库权限；只有用户或模型任务主动访问受保护目录、麦克风等资源时，macOS 才可能按实际操作显示系统授权框。
+
+终端支持最多 8 格平铺和多个独立窗口，使用 macOS 原生 `⌘C`、`⌘V`、`⌘A` 及右键复制/粘贴。把图片或文件拖进终端时，只插入路径，不自动执行。
 
 ## Windows 远程控制端
 
