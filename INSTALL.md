@@ -4,7 +4,7 @@
 
 ## macOS 完整工作端
 
-1. 下载 [沙禾项目终端-4.4.2-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/%E6%B2%99%E7%A6%BE%E9%A1%B9%E7%9B%AE%E7%BB%88%E7%AB%AF-4.4.2-macOS.dmg)。
+1. 下载 [Shaihe-Project-Terminal-4.4.2-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/Shaihe-Project-Terminal-4.4.2-macOS.dmg)。
 2. 打开 DMG，把“沙禾项目终端”拖入“应用程序”。
 3. 首次打开时选择项目根目录；可以使用 `~/Documents/AI`，也可以选择其他文件夹、外置磁盘或已有项目根目录。
 4. 按引导检查并登录自己使用的官方 CLI。应用不收集密码、Cookie 或 Token。

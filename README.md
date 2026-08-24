@@ -29,7 +29,7 @@
 
 | 平台 | 形态 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| macOS | 完整工作端 | [4.4.2 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/%E6%B2%99%E7%A6%BE%E9%A1%B9%E7%9B%AE%E7%BB%88%E7%AB%AF-4.4.2-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
+| macOS | 完整工作端 | [4.4.2 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/Shaihe-Project-Terminal-4.4.2-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
 | iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |

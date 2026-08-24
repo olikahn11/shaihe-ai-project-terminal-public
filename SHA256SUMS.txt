@@ -1,4 +1,4 @@
-caa2fe17f6a34f1d5c3f662b89cfdef14f3f60e8f7fb3267c96b66cfabf0f940  沙禾项目终端-4.4.2-macOS.dmg
+caa2fe17f6a34f1d5c3f662b89cfdef14f3f60e8f7fb3267c96b66cfabf0f940  Shaihe-Project-Terminal-4.4.2-macOS.dmg
 3366f974aff6fba34ab96aafbb72689797c892351e04b9e53a9f5f13ef2d1452  Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe
 6e90a075f9d14c04ed65896e2f7a9c4ca88ef01bec0a9a39bc6b49ae14cb2e94  Shaihe-Project-Terminal-Remote-4.4.1-Android.apk
 824656c7cc97a8274993fc42290bf514b5f71d0982d5e4586598259e69c0cc60  Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa
