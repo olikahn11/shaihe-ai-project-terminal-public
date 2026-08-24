@@ -2,9 +2,9 @@
 
 沙禾项目终端（Shaihe Project Terminal）是一套面向官方 AI CLI 的本地项目与真实终端工作驾驶舱。它把项目、任务清单、官方账号状态、模型选择和真实终端会话放到一个可操作的桌面入口中：macOS 运行工作端，Windows、Android 和 iPhone 作为远程控制端。
 
-> 当前公开版本：**4.4.1**
+> 当前公开版本：**4.4.2**
 >
-> [下载 4.4.1 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.1) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.1.md) · [SHA-256 校验值](SHA256SUMS.txt)
+> [下载 4.4.2 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.2) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.2.md) · [SHA-256 校验值](SHA256SUMS.txt)
 
 ## 它解决什么问题
 
@@ -21,16 +21,20 @@
 - **项目与会话管理**：支持新建、继续、恢复、跨模型接力、项目详情、任务进度和运行状态查看。
 - **静默原生后台**：macOS 工作端不依赖 Ghostty，正常启动不会弹出 Terminal.app 或 `.command` 窗口。
 - **文件拖入与项目范围**：图片或文件拖入后只插入安全路径，不自动执行；首次设置由用户选择项目根目录，应用只扫描其一级项目。
+- **新手一键功能**：独立大终端右下角提供按当前模型匹配的中文一键功能与命令助手；每项带 `!` 用途说明，命令助手只填入、不自动回车。
+- **Token 零额外浪费保护**：空白启动与继续会话不注入隐藏 system prompt、rules 或语言指令；后台刷新不执行 `/usage`、`/stats` 或任何模型提示。只有用户主动发送、一键命令或已启用的计划任务才调用模型。
 - **远程控制**：Windows、Android 和 iPhone 可通过局域网或同一 Tailscale 网络连接正在运行的 Mac 工作端；手机也可以使用响应式 Web App。
 
 ## 平台与下载
 
 | 平台 | 形态 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| macOS | 完整工作端 | [DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-4.4.1-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
+| macOS | 完整工作端 | [4.4.2 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/%E6%B2%99%E7%A6%BE%E9%A1%B9%E7%9B%AE%E7%BB%88%E7%AB%AF-4.4.2-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
 | iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |
+
+4.4.2 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.2 Mac 工作端。
 
 ## 快速开始
 
@@ -92,4 +96,4 @@ shasum -a 256 -c SHA256SUMS.txt
 
 ## 发布验证
 
-最终 macOS 4.4.1 构建完成了 Python `147/147`、TypeScript 类型检查、Vite 生产构建、Swift 编译、DMG CRC/只读挂载、应用深度签名与从镜像实际启动验收；隔离环境下 8 格终端和 8 个原生窗口逐项输入、滚屏、切换、系统剪贴板与右键粘贴均已验证。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。
+最终 macOS 4.4.2 构建完成了 Python `154/154`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名与从镜像实际启动验收；六家假 CLI 连续 5 轮强制刷新记录中没有任何模型提示参数，真实 CLI 的空白启动命令也逐家锁定为官方最小命令。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。
