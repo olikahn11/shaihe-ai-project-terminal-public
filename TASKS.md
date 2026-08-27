@@ -15,3 +15,6 @@
 - [x] 发布 4.4.3 换号引导横幅与 Claude/Grok 手动“刷新额度”说明
 - [x] 发布并校验 4.4.3 macOS DMG、安装说明、更新记录与 SHA-256
 - [x] 明确 4.4.1 Windows、Android、iPhone 遥控端继续兼容 4.4.3 Mac 工作端
+- [x] 发布 4.4.4 切换体验统一命名、取消换号自动消失与不存凭据的账号记忆说明
+- [x] 发布并校验 4.4.4 macOS DMG、安装说明、更新记录与 SHA-256
+- [x] 明确 4.4.1 Windows、Android、iPhone 遥控端继续兼容 4.4.4 Mac 工作端

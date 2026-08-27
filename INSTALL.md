@@ -1,10 +1,10 @@
-# 沙禾项目终端 4.4.3 安装说明
+# 沙禾项目终端 4.4.4 安装说明
 
-请从 [GitHub Release v4.4.3](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.3) 下载 macOS 工作端。下载后建议先按照本文的校验步骤验证 SHA-256。4.4.1 遥控端继续兼容 4.4.3 工作端。
+请从 [GitHub Release v4.4.4](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.4) 下载 macOS 工作端。下载后建议先按照本文的校验步骤验证 SHA-256。4.4.1 遥控端继续兼容 4.4.4 工作端。
 
 ## macOS 完整工作端
 
-1. 下载 [Shaihe-Project-Terminal-4.4.3-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.3/Shaihe-Project-Terminal-4.4.3-macOS.dmg)。
+1. 下载 [Shaihe-Project-Terminal-4.4.4-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.4/Shaihe-Project-Terminal-4.4.4-macOS.dmg)。
 2. 打开 DMG，把“沙禾项目终端”拖入“应用程序”。
 3. 首次打开时选择项目根目录；可以使用 `~/Documents/AI`，也可以选择其他文件夹、外置磁盘或已有项目根目录。
 4. 按引导检查并登录自己使用的官方 CLI。应用不收集密码、Cookie 或 Token。
@@ -51,7 +51,7 @@ APK 使用开发测试证书并通过 APK v2 签名，可用于侧载测试，�
 
 ## 校验下载文件
 
-把 [SHA256SUMS.txt](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.3/SHA256SUMS.txt) 下载到安装包所在目录，在终端执行：
+把 [SHA256SUMS.txt](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.4/SHA256SUMS.txt) 下载到安装包所在目录，在终端执行：
 
 ```bash
 shasum -a 256 -c SHA256SUMS.txt
