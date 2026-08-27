@@ -2,9 +2,9 @@
 
 沙禾项目终端（Shaihe Project Terminal）是一套面向官方 AI CLI 的本地项目与真实终端工作驾驶舱。它把项目、任务清单、官方账号状态、模型选择和真实终端会话放到一个可操作的桌面入口中：macOS 运行工作端，Windows、Android 和 iPhone 作为远程控制端。
 
-> 当前公开版本：**4.4.2**
+> 当前公开版本：**4.4.3**
 >
-> [下载 4.4.2 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.2) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.2.md) · [SHA-256 校验值](SHA256SUMS.txt)
+> [下载 4.4.3 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.3) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.3.md) · [SHA-256 校验值](SHA256SUMS.txt)
 
 ## 它解决什么问题
 
@@ -29,12 +29,12 @@
 
 | 平台 | 形态 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| macOS | 完整工作端 | [4.4.2 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.2/Shaihe-Project-Terminal-4.4.2-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
+| macOS | 完整工作端 | [4.4.3 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.3/Shaihe-Project-Terminal-4.4.3-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
 | iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |
 
-4.4.2 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.2 Mac 工作端。
+4.4.3 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.3 Mac 工作端。
 
 ## 快速开始
 
@@ -96,4 +96,4 @@ shasum -a 256 -c SHA256SUMS.txt
 
 ## 发布验证
 
-最终 macOS 4.4.2 构建完成了 Python `154/154`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名与从镜像实际启动验收；六家假 CLI 连续 5 轮强制刷新记录中没有任何模型提示参数，真实 CLI 的空白启动命令也逐家锁定为官方最小命令。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。
+最终 macOS 4.4.3 构建完成了 Python `161/161`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名与从镜像实际启动验收；新增的手动“刷新额度”专门用架构测试确认了它绝不会被后台轮询触发，只能由用户点击按钮发起。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。

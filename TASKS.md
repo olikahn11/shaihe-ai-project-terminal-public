@@ -12,3 +12,6 @@
 - [x] 发布六家官方 CLI 的 Token 零额外浪费保护与旧任务安全迁移说明
 - [x] 发布并校验 4.4.2 macOS DMG、安装说明、更新记录与 SHA-256
 - [x] 明确 4.4.1 Windows、Android、iPhone 遥控端继续兼容 4.4.2 Mac 工作端
+- [x] 发布 4.4.3 换号引导横幅与 Claude/Grok 手动“刷新额度”说明
+- [x] 发布并校验 4.4.3 macOS DMG、安装说明、更新记录与 SHA-256
+- [x] 明确 4.4.1 Windows、Android、iPhone 遥控端继续兼容 4.4.3 Mac 工作端
