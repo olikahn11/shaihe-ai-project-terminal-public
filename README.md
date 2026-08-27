@@ -2,9 +2,9 @@
 
 沙禾项目终端（Shaihe Project Terminal）是一套面向官方 AI CLI 的本地项目与真实终端工作驾驶舱。它把项目、任务清单、官方账号状态、模型选择和真实终端会话放到一个可操作的桌面入口中：macOS 运行工作端，Windows、Android 和 iPhone 作为远程控制端。
 
-> 当前公开版本：**4.4.4**
+> 当前公开版本：**4.4.5**
 >
-> [下载 4.4.4 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.4) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.4.md) · [SHA-256 校验值](SHA256SUMS.txt)
+> [下载 4.4.5 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.5) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.5.md) · [SHA-256 校验值](SHA256SUMS.txt)
 
 ## 它解决什么问题
 
@@ -15,26 +15,26 @@
 - **多模型官方终端**：统一管理 Codex、Claude Code、Gemini CLI、Grok CLI、Kimi Code 和 Qwen Code；登录、退出、换号交给对应官方 CLI。
 - **真实 PTY/tmux 会话**：终端不是截图或模拟输出。输入、ANSI 颜色、中文、滚屏和 CLI 自己的交互界面都通过真实终端通道传输；关闭窗口或远程端断线不会自动结束后台任务。
 - **最多 8 格终端平铺**：选择多个任务后进入平铺工作区，每一格都可以单独点击、输入、滚屏和切换焦点；也可以打开对应的独立终端大窗口。
-- **输入和剪贴板**：支持终端输入、选中文字、右键菜单中的复制/粘贴/全选，以及 macOS 常用的 `⌘C`、`⌘V`、`⌘A` 和 `Shift+Insert`；没有选中文本时 `Ctrl+C` 仍保留为终端中断。
-- **终端可读性**：使用低饱和、高对比的终端色板，尽量保留 AI CLI 的 ANSI 语义颜色；可关闭非必要动效，减少多窗口同时运行时的额外绘制。
+- **输入、剪贴板与滚动**：大终端提供全选、复制、粘贴、看最新和右键菜单，也支持 macOS 常用的 `⌘C`、`⌘V`、`⌘A`；上滑回看时不会被新输出强行拉回底部，没有选中文本时 `Ctrl+C` 仍保留为终端中断。
+- **终端可读性**：使用高对比的 ANSI/真彩色终端色板和有界输出队列；新任务可见地默认勾选“优先使用简体中文”，已有会话可一键发送“中文交流”要求，代码、命令、路径和报错原文保持原样。
 - **项目记忆同源**：从 `TASKS.md`、`AGENTS.md`、`HANDOVER.md` 等项目文件读取任务和交接信息，不把聊天记录当成项目记忆。
-- **项目与会话管理**：支持新建、继续、恢复、跨模型接力、项目详情、任务进度和运行状态查看。
+- **项目与会话管理**：项目清单进度和真实终端运行状态分开显示；点击侧栏项目可展开任务与历史会话，并按原 Provider 和官方 Session ID 继续对话。
 - **静默原生后台**：macOS 工作端不依赖 Ghostty，正常启动不会弹出 Terminal.app 或 `.command` 窗口。
 - **文件拖入与项目范围**：图片或文件拖入后只插入安全路径，不自动执行；首次设置由用户选择项目根目录，应用只扫描其一级项目。
 - **新手一键功能**：独立大终端右下角提供按当前模型匹配的中文一键功能与命令助手；每项带 `!` 用途说明，命令助手只填入、不自动回车。
-- **Token 零额外浪费保护**：空白启动与继续会话不注入隐藏 system prompt、rules 或语言指令；后台刷新不执行 `/usage`、`/stats` 或任何模型提示。只有用户主动发送、一键命令或已启用的计划任务才调用模型。
+- **Token 与额度边界**：不注入隐藏 system prompt 或 rules，后台刷新不自动执行模型提示；“优先使用简体中文”是新建任务里可见、可取消的首条用户指令。Codex 显示官方额度，Claude 可由用户手动发起一次官方 `/usage` 刷新，无法读取时明确说明原因。
 - **远程控制**：Windows、Android 和 iPhone 可通过局域网或同一 Tailscale 网络连接正在运行的 Mac 工作端；手机也可以使用响应式 Web App。
 
 ## 平台与下载
 
 | 平台 | 形态 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| macOS | 完整工作端 | [4.4.4 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.4/Shaihe-Project-Terminal-4.4.4-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
+| macOS | 完整工作端 | [4.4.5 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.5/Shaihe-Project-Terminal-4.4.5-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
 | iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |
 
-4.4.4 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.4 Mac 工作端。
+4.4.5 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.5 Mac 工作端。
 
 ## 快速开始
 
@@ -43,7 +43,7 @@
 1. 下载 DMG，把“沙禾项目终端”拖入“应用程序”。
 2. 首次打开时选择项目根目录；推荐使用 `~/Documents/AI/<项目名>`。
 3. 按引导检查并登录自己使用的官方 CLI。应用不收集密码、Cookie 或 Token。
-4. 选择“新建任务”或继续历史任务。需要同时处理多个任务时，选择多个任务并进入“终端平铺”。
+4. 选择“新建任务”或继续历史任务。新任务默认优先使用简体中文，可在创建时取消；旧会话可从“一键功能”点击“中文交流”。
 5. 点击任意终端格即可输入和滚屏；右键可复制、粘贴和全选。关闭视图只会断开显示，不会自动结束 tmux 任务。
 
 ### Windows、Android、iPhone
@@ -96,4 +96,4 @@ shasum -a 256 -c SHA256SUMS.txt
 
 ## 发布验证
 
-最终 macOS 4.4.4 构建完成了 Python `167/167`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名与从镜像实际启动验收；新增的账号记忆专门用测试确认了只存邮箱字符串、不接受任何凭据参数，取消/失败换号也用测试锁定了绝不调用退出命令。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。
+最终 macOS 4.4.5 构建完成了 Python `169/169`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名、本机安装与健康接口验收；隔离终端压力测试覆盖了多路 PTY、滚动与有界输出。真实 AI CLI、账号、额度和项目文件仍由安装者自己的本机环境提供。

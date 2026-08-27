@@ -1,17 +1,18 @@
-# 沙禾项目终端 4.4.4 安装说明
+# 沙禾项目终端 4.4.5 安装说明
 
-请从 [GitHub Release v4.4.4](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.4) 下载 macOS 工作端。下载后建议先按照本文的校验步骤验证 SHA-256。4.4.1 遥控端继续兼容 4.4.4 工作端。
+请从 [GitHub Release v4.4.5](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.5) 下载 macOS 工作端。下载后建议先按照本文的校验步骤验证 SHA-256。4.4.1 遥控端继续兼容 4.4.5 工作端。
 
 ## macOS 完整工作端
 
-1. 下载 [Shaihe-Project-Terminal-4.4.4-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.4/Shaihe-Project-Terminal-4.4.4-macOS.dmg)。
+1. 下载 [Shaihe-Project-Terminal-4.4.5-macOS.dmg](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.5/Shaihe-Project-Terminal-4.4.5-macOS.dmg)。
 2. 打开 DMG，把“沙禾项目终端”拖入“应用程序”。
 3. 首次打开时选择项目根目录；可以使用 `~/Documents/AI`，也可以选择其他文件夹、外置磁盘或已有项目根目录。
 4. 按引导检查并登录自己使用的官方 CLI。应用不收集密码、Cookie 或 Token。
-5. 需要同时处理多个任务时，选择多个任务进入“终端平铺”；每一格都可以点击、输入、滚屏和复制粘贴。
-6. 大终端右下角可使用“快 一键功能”和“/ 命令助手”；`!` 只显示用途，不向终端发送内容。
+5. 新建任务默认勾选“优先使用简体中文”；可以取消。继续旧会话后如需切换为中文，在大终端“一键功能”里点击“中文交流”。
+6. 需要同时处理多个任务时，选择多个任务进入“终端平铺”；每一格都可以点击、输入、滚屏和复制粘贴。
+7. 大终端底部可使用“快 一键功能”和“/ 命令助手”；`!` 只显示用途，不向终端发送内容。
 
-Token 保护默认开启且不能被后台刷新绕过：应用不注入隐藏提示，不自动执行 `/usage`、`/stats` 或其他模型请求。模型与推理默认跟随官方 CLI；高推理档位和并发任务会在界面标明更高消耗。
+Token 保护默认开启且不能被后台刷新绕过：应用不注入隐藏 system prompt 或 rules，不自动执行模型请求。“优先使用简体中文”是创建窗口里可见、可取消的首条用户指令；手动“刷新额度”和一键功能只在用户点击后执行。模型与推理默认跟随官方 CLI；高推理档位和并发任务会在界面标明更高消耗。
 
 当前 DMG 使用 ad-hoc 签名，未使用 Developer ID 公证。其他 Mac 首次打开可能显示 Gatekeeper 提示；请确认文件来自本公开仓库后，在系统设置中允许打开。
 
@@ -19,7 +20,7 @@ Token 保护默认开启且不能被后台刷新绕过：应用不注入隐藏�
 
 工作端不依赖 Ghostty，正常启动不会弹出 Terminal.app 或 `.command` 窗口。应用自身不需要照片图库权限；只有用户或模型任务主动访问受保护目录、麦克风等资源时，macOS 才可能按实际操作显示系统授权框。
 
-终端支持最多 8 格平铺和多个独立窗口，使用 macOS 原生 `⌘C`、`⌘V`、`⌘A` 及右键复制/粘贴。把图片或文件拖进终端时，只插入路径，不自动执行。
+终端支持最多 8 格平铺和多个独立窗口，提供全选、复制、粘贴、看最新、回看锁定以及 macOS 原生 `⌘C`、`⌘V`、`⌘A`。把图片或文件拖进终端时，只插入路径，不自动执行。
 
 ## Windows 远程控制端
 
@@ -51,7 +52,7 @@ APK 使用开发测试证书并通过 APK v2 签名，可用于侧载测试，�
 
 ## 校验下载文件
 
-把 [SHA256SUMS.txt](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.4/SHA256SUMS.txt) 下载到安装包所在目录，在终端执行：
+把 [SHA256SUMS.txt](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.5/SHA256SUMS.txt) 下载到安装包所在目录，在终端执行：
 
 ```bash
 shasum -a 256 -c SHA256SUMS.txt
