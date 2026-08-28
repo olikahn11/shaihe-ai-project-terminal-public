@@ -2,9 +2,9 @@
 
 沙禾项目终端（Shaihe Project Terminal）是一套面向官方 AI CLI 的本地项目与真实终端工作驾驶舱。它把项目、任务清单、官方账号状态、模型选择和真实终端会话放到一个可操作的桌面入口中：macOS 运行工作端，Windows、Android 和 iPhone 作为远程控制端。
 
-> 当前公开版本：**4.4.5**
+> 当前公开版本：**4.4.6**
 >
-> [下载 4.4.5 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.5) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.5.md) · [SHA-256 校验值](SHA256SUMS.txt)
+> [下载 4.4.6 安装包](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/tag/v4.4.6) · [安装说明](INSTALL.md) · [更新记录](RELEASE_NOTES_4.4.6.md) · [SHA-256 校验值](SHA256SUMS.txt)
 
 ## 它解决什么问题
 
@@ -17,6 +17,9 @@
 - **最多 8 格终端平铺**：选择多个任务后进入平铺工作区，每一格都可以单独点击、输入、滚屏和切换焦点；也可以打开对应的独立终端大窗口。
 - **输入、剪贴板与滚动**：大终端提供全选、复制、粘贴、看最新和右键菜单，也支持 macOS 常用的 `⌘C`、`⌘V`、`⌘A`；上滑回看时不会被新输出强行拉回底部，没有选中文本时 `Ctrl+C` 仍保留为终端中断。
 - **终端可读性**：使用高对比的 ANSI/真彩色终端色板和有界输出队列；新任务可见地默认勾选“优先使用简体中文”，已有会话可一键发送“中文交流”要求，代码、命令、路径和报错原文保持原样。
+- **Codex 历史回看**：新会话使用 Codex 官方行内模式；升级前已在运行的全屏会话也可通过触控板、上翻/下翻按钮、`PageUp/PageDown` 或 `Shift+方向键` 回看 tmux 历史，不再把滚动误当成旧输入。
+- **任务栏即时更新**：从侧栏继续历史对话或新建任务后，首页任务栏和项目侧栏会立刻出现这个任务，不需要等待轮询或手动刷新。
+- **设置里能看到版本号**：设置页底部显示当前实际运行的版本，反馈问题时可以直接附上。
 - **项目记忆同源**：从 `TASKS.md`、`AGENTS.md`、`HANDOVER.md` 等项目文件读取任务和交接信息，不把聊天记录当成项目记忆。
 - **项目与会话管理**：项目清单进度和真实终端运行状态分开显示；点击侧栏项目可展开任务与历史会话，并按原 Provider 和官方 Session ID 继续对话。
 - **静默原生后台**：macOS 工作端不依赖 Ghostty，正常启动不会弹出 Terminal.app 或 `.command` 窗口。
@@ -29,12 +32,12 @@
 
 | 平台 | 形态 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| macOS | 完整工作端 | [4.4.5 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.5/Shaihe-Project-Terminal-4.4.5-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
+| macOS | 完整工作端 | [4.4.6 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.6/Shaihe-Project-Terminal-4.4.6-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
 | iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |
 
-4.4.5 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.5 Mac 工作端。
+4.4.6 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.6 Mac 工作端。
 
 ## 快速开始
 
@@ -96,4 +99,4 @@ shasum -a 256 -c SHA256SUMS.txt
 
 ## 发布验证
 
-最终 macOS 4.4.5 构建完成了 Python `169/169`、TypeScript 类型检查、Vite 生产构建、DMG CRC/只读挂载、应用深度签名、本机安装与健康接口验收；隔离终端压力测试覆盖了多路 PTY、滚动与有界输出。真实 AI CLI、账号、额度和项目文件仍由安装者自己的本机环境提供。
+最终 macOS 4.4.6 构建完成了 Python `174/174`、TypeScript 类型检查、Vite 生产构建、DMG CRC 与 SHA-256 校验、只读挂载、镜像内应用深度签名与稳定 designated requirement，以及隔离启动后的健康接口和版本号验收。安装到本机时正在运行的 tmux 任务未被结束。真实 AI CLI、账号和项目文件仍由安装者自己的本机环境提供。
