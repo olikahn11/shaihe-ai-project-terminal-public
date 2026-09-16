@@ -1,4 +1,4 @@
-1f186d291ca9b3ba1dce1df313325a7064c8c9d90cfe13e3bd9a7a69aa91f467  Shaihe-Project-Terminal-4.4.9-macOS.dmg
+ff21225e1a75b9d1ca59f62831617a42f17055a4936b6c88a5f9d854ce4b1483  Shaihe-Project-Terminal-4.4.9-macOS.dmg
 e390fdc401d3f5cf38cee37d35b4d921f4b112d080dbcad13bfcb27fdd88833a  Shaihe-Terminal-Remote-4.4.9.ipa
 3366f974aff6fba34ab96aafbb72689797c892351e04b9e53a9f5f13ef2d1452  Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe
 6e90a075f9d14c04ed65896e2f7a9c4ca88ef01bec0a9a39bc6b49ae14cb2e94  Shaihe-Project-Terminal-Remote-4.4.1-Android.apk
