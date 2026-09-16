@@ -30,10 +30,13 @@
 - **配套 iOS 原生遥控 IPA**：发布包内新增 `Shaihe-Terminal-Remote-4.4.9.ipa`，专供 iPhone 用户通过全能签（Esign）、TrollStore、Sideloadly、AltStore 自签安装，内置扫码配对与网络重连；
 - **免安装 Safari 扫码即用**：支持直接用 iPhone 扫码打开并“添加到主屏幕”作为全屏 Web App，随时随地随身掌控长线任务。
 
-### 4. 多国语言支持 (Display Language)
-- **支持 5 种主流语言**：简体中文 (`zh-CN`)、繁體中文 (`zh-TW`)、English (`en`)、日本語 (`ja`)、한국어 (`ko`)；
+### 6. 多国语言支持 (Display Language)
+- **全面支持中、日、韩、英及欧洲主流语言（共 13 种语言）**：
+  - 亚洲与英语：简体中文 (`zh-CN`)、繁體中文 (`zh-TW`)、English (`en`)、日本語 (`ja`)、한국어 (`ko`)；
+  - 欧洲主流语言：Français (`fr`, 法语)、Deutsch (`de`, 德语)、Español (`es`, 西班牙语)、Italiano (`it`, 意大利语)、Русский (`ru`, 俄语)、Português (`pt`, 葡萄牙语)、Nederlands (`nl`, 荷兰语)、Polski (`pl`, 波兰语)；
 - **即时生效与持久化**：在设置页中任意切换，整个界面与各级面板即时刷新，并持久化保存；
 - **无缝本地化**：顶栏、项目侧栏、任务总控、实况终端详情、底部快捷键栏与设置全流程完整翻译，方便全球用户顺畅使用。
+
 
 ---
 
