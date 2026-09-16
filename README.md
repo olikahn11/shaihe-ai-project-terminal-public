@@ -12,7 +12,7 @@
 
 ## 主要功能
 
-- **多模型官方终端**：统一管理 Codex、Claude Code、**Google Antigravity (`agy`)**、Gemini CLI、Grok CLI、Kimi Code 和 Qwen Code（DeepSeek / GLM / MiniMax 后端）；登录、退出、换号交给对应官方 CLI。
+- **多模型官方终端**：统一管理 Codex、Claude Code、**Google Antigravity (`agy`)**、Gemini CLI、Grok CLI、Kimi Code 和 Qwen Code；未检测到 CLI 时自动先安装官方 CLI 再登录；登录、退出、换号完全由官方 CLI 驱动。
 - **终端 0 延迟秒开 (Instant Mount)**：独立大终端在第 0 毫秒即时挂载骨架并并发建立连接，彻底告别调出输入界面时的卡顿与等待。
 - **高对比度真彩终端与排版**：深邃 OLED 纯黑背景，标准与高亮 16 色升级高饱和真彩色阶，解除对比度强制篡改，原生支持双线边框、状态徽章与彩虹进度条。
 - **多账号安全隔离**：顶栏与设置同步管理默认账号，单任务可自由独立换号，独立环境防止凭据跨任务串扰。
@@ -34,7 +34,7 @@
 | macOS | 完整工作端 | [4.4.9 DMG](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.9/Shaihe-Project-Terminal-4.4.9-macOS.dmg) | 在本机运行官方 CLI、项目扫描、终端和远程服务 |
 | Windows | 远程控制端 | [Setup.exe](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Windows-Setup.exe) | 连接正在运行的 Mac 工作端 |
 | Android | 远程控制端 | [APK](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-Android.apk) | 侧载测试包 |
-| iPhone | 远程控制端 / Web App | [未签名 IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) | IPA 需要重签；没有证书时使用 Web App |
+| iPhone | 远程控制端 / Web App | [4.4.9 IPA (全能签/TrollStore)](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.9/Shaihe-Terminal-Remote-4.4.9.ipa) | 支持全能签/巨魔/自签安装；也可 Safari 免安装添加主屏幕 |
 
 4.4.9 没有修改遥控协议；Windows、Android、iPhone 继续使用 4.4.1 遥控端即可连接 4.4.9 Mac 工作端。
 

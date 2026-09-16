@@ -40,9 +40,16 @@ APK 使用开发测试证书并通过 APK v2 签名，可用于侧载测试，�
 
 ## iPhone 远程控制端
 
-[iOS IPA](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.1/Shaihe-Project-Terminal-Remote-4.4.1-iOS-unsigned.ipa) 是 arm64 未签名构建，不能直接安装到普通 iPhone。需要使用目标设备所属 Apple Developer 团队的证书和描述文件重新签名。
+发布包已提供 [Shaihe-Terminal-Remote-4.4.9.ipa](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.9/Shaihe-Terminal-Remote-4.4.9.ipa)。
 
-没有证书时，在 iPhone 浏览器打开 Mac“设置 → 手机远程”提供的地址，并把响应式 Web App 添加到主屏幕。
+### 1. 全能签 / 巨魔（TrollStore）/ 自签安装（原生 App）
+1. 下载 [Shaihe-Terminal-Remote-4.4.9.ipa](https://github.com/olikahn11/shaihe-ai-project-terminal-public/releases/download/v4.4.9/Shaihe-Terminal-Remote-4.4.9.ipa)；
+2. **全能签（Esign）**：在手机上打开「全能签」，导入该 IPA 文件，选择您的个人或企业证书，点击「签名」后即可一键安装；
+3. **巨魔商店（TrollStore）**：iOS 14.0 - 17.0 设备直接分享至 TrollStore 选择「Install」永久原生安装；
+4. **Sideloadly / AltStore**：连接电脑使用个人 Apple ID 免费自签安装。
+
+### 2. 免安装 Safari 扫码即用（强烈推荐，最快捷）
+无需任何证书：在 iPhone 相机扫码打开 Mac「设置 → 手机远程总控」的配对二维码，在 Safari 底部点击「分享」并选择「添加到主屏幕」，即可生成独立全屏图标，体验与原生 App 完全一致！
 
 ## 连接方式
 
