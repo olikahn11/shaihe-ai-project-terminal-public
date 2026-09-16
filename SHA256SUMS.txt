@@ -1,2 +1,2 @@
-3b37c05825196e90c3e0abb8367cff030fcf9d9ff58de4c9a7beecc5e66980c0  Shaihe-Project-Terminal-4.4.9-macOS.dmg
+d297db3dbeed4e3ce5b9f6e2ff500602a433fdb754cec0980c7aabae184500b8  Shaihe-Project-Terminal-4.4.9-macOS.dmg
 e390fdc401d3f5cf38cee37d35b4d921f4b112d080dbcad13bfcb27fdd88833a  Shaihe-Terminal-Remote-4.4.9.ipa
